@@ -3,6 +3,7 @@ let gameCards = document.querySelectorAll(".gameCard");
 let NumOfMove=document.querySelector("#NumOfMove");
 let NumOfMatched=document.querySelector("#NumOfMatched");
 let ResetBtn=document.querySelector("#resetBtn");
+let rules=document.querySelector("#rules");
 
 let emojis = [
     "🍎", "🍎",
@@ -84,3 +85,6 @@ ResetBtn.addEventListener("click",function(){
  NumOfMatched.textContent=score;
 });
 
+rules.addEventListener("click",function(){
+    window.location.href="index1.html";
+})
